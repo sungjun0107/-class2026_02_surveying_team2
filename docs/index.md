@@ -2,7 +2,7 @@
 layout: report
 advanced: true
 title: "야간조명 강도와 야간 지표면 온도의 관계 분석"
-subtitle: "품질 기준 민감도와 공간 블록 예측 검증을 포함한 합성자료 기반 분석"
+subtitle: "VIIRS·MODIS 위성자료 기반 부산시 야간조명–지표면온도 연관성의 환경조건 보정과 계절별 비교"
 team: "2조"
 period: "관측 기간 없음 · 합성자료"
 status: "합성 분석 실행 확인"
