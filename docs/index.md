@@ -19,23 +19,25 @@ badge: "측량학 2조 프로젝트"
 
 ## 1. 연구 배경 {#background}
 
- 도시의 건물과 포장면에 낮 동안 저장된 열은 해가 진 뒤에도 방출된다. 지표의 재질과 토지피복에 따라 열을 저장하고 방출하는 특성이 다르므로, 같은 도시 안에서도 야간 지표면온도(Land Surface Temperature, LST)는 지역마다 다르게 나타날 수 있다. Peng et al.(2012)는 전 세계 419개 대도시를 비교한 결과, 도시와 교외의 지표면온도 차이로 정의한 지표면 열섬 강도가 주간과 야간 사이에 통계적으로 유의한 상관을 보이지 않았으며, 각 시간대의 열섬 강도와 관련된 요인도 달랐다고 보고하였다. 이는 주간 관측만으로 야간 열환경을 파악하기 어려울 수 있음을 보여준다. [미국 EPA - 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
-[미국 EPA - 도시 열섬 측정 방법](https://www.epa.gov/heatislands/measuring-heat-islands).
- [Peng et al.(2012)](https://sites.bu.edu/cliveg/files/2013/11/peng-uhi-est-2012.pdf
-).
+ 폭염에 대응하려면 도시 내부에서 열이 집중되는 지역을 파악할 필요가 있다. 부산광역시는 폭염 종합대책을 통해 취약계층 보호와 폭염 대피공간 확충을 추진하고 있으며, 야간 지표면온도의 공간 분포는 도시 열환경을 진단하는 데 참고할 수 있는 자료다. 지표면온도(Land Surface Temperature, LST)는 도로, 건물 지붕, 토양, 식생 등 지표의 표면 온도를 뜻한다. 도시의 건물과 포장면에 낮 동안 저장된 열은 해가 진 뒤에도 방출되며, 지표의 재질과 피복에 따라 열을 저장하고 방출하는 특성이 달라 같은 도시 안에서도 야간 지표면온도에 차이가 생길 수 있다. Peng et al. (2012)은 전 세계 419개 대도시에서 도시와 교외의 지표면온도 차이를 비교해, 지표면 열섬 강도와 관련된 요인이 주간과 야간에 다르다고 보고하였다. 이러한 차이는 야간의 열환경을 별도로 살펴볼 필요성을 뒷받침한다.  
+[부산광역시 폭염 종합대책](https://museum.busan.go.kr/busan/news/1731817).
+[미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
+[Peng et al. (2012) 논문 PDF](https://sites.bu.edu/cliveg/files/2013/11/peng-uhi-est-2012.pdf).
 
- VIIRS 야간조명 자료는 위성이 관측한 복사휘도를 통해 인공조명 밝기의 공간적 분포를 보여준다. 조명이 집중된 지역은 건물과 도로의 분포에서도 주변과 차이를 보일 수 있으며, 이러한 지표 구성은 열의 저장과 방출에 관여한다. 따라서 야간조명 강도(Nighttime Lights, NTL)와 야간 지표면온도를 함께 분석하면, 조명이 밝게 관측되는 지역이 도시 내부의 야간 온도 분포에서 어떤 특성을 보이는지 평가할 수 있다. Song 외(2021)는 베이징과 평양에서 VIIRS 야간조명 강도와 MODIS 야간 지표면온도의 공간적 관계를 분석하였다. Nganyiyimana 외(2023)는 서울에서 VIIRS 야간조명 강도와 MODIS 기반 야간 지표면 열섬 강도 사이에 양의 상관관계를 확인하고, 야간조명을 서울의 야간 열섬 강도를 나타내는 잠재적 대리지표로 제시하였다.
-[미국 EPA - 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
-[미국 EPA - 도시 열섬 측정 방법](https://www.epa.gov/heatislands/measuring-heat-islands).
-[Google Earth Engine — VIIRS 월별 야간조명 데이터 공식 문서](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG?hl=ko).
-[Song et al.(2021)](https://doi.org/10.3390/rs13163180).
-[Nganyiyimana et al.(2023)](https://doi.org/10.3992/jgb.18.2.29).
+ VIIRS 야간조명 자료는 위성이 관측한 야간 복사휘도를 바탕으로 조명의 공간 분포를 보여준다. 조명이 밝게 관측되는 곳은 건물과 도로가 밀집하거나 야간 활동이 집중되는 곳과 겹칠 수 있다. 건물과 포장면의 열 저장과 방출, 냉방이나 교통 등에서 발생하는 인공열은 도시의 야간 열환경과도 관련된다. 따라서 야간조명과 야간 지표면온도를 함께 비교하면, 조명이 집중된 지역과 야간에 높은 지표면온도를 보이는 지역이 어느 정도 일치하는지 살펴볼 수 있다. Song et al. (2021)은 베이징과 평양에서 VIIRS 야간조명과 MODIS 지표면온도 자료를 활용해 도시 열섬의 공간적 특성을 비교하였다. Nganyiyimana et al. (2023)은 서울에서 야간조명 강도와 야간 지표면 열섬 강도 사이에 양의 상관관계를 보고하였다.
+[VIIRS 월별 야간조명 자료](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMSLCFG).
+[미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
+[Song et al. (2021) 논문 원문](https://www.mdpi.com/2072-4292/13/16/3180).
+[Nganyiyimana et al. (2023) 논문 초록](https://khu.elsevierpure.com/en/publications/nighttime-light-a-potential-proxy-for-local-nocturnal-urban-heat-/).
 
- 이러한 선행연구를 바탕으로 부산의 야간 열환경을 살펴보려면, 야간조명과 지표면온도의 관계가 지역별 환경조건을 고려한 뒤에도 나타나는지 확인할 필요가 있다. 부산광역시는 해안과 내륙, 저지대와 산지가 함께 분포하므로, 조명이 밝은 지역과 어두운 지역 사이의 온도 차이에는 해안까지의 거리, 고도, 식생 상태의 차이가 함께 반영될 수 있다. 두 변수의 단순 비교만으로는 이러한 환경조건을 고려한 뒤에도 야간조명 강도가 지표면온도의 공간적 차이를 설명하는 데 기여하는지 판단하기 어렵다. 또한 지표의 열적 상태와 구름의 영향을 받는 유효 관측 범위는 계절에 따라 달라질 수 있으므로, 계절별 관계와 자료 선별 기준에 따른 결과의 변화도 함께 살펴볼 필요가 있다. 
-[Google Earth Engine — VIIRS 월별 야간조명 데이터 공식 문서](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG?hl=ko).
-[Google Earth Engine — Aqua MODIS 지표면온도(MYD11A1.061) 데이터 공식 문서](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1).
+ 이러한 선행연구는 야간조명 자료를 도시 열환경 연구에 활용할 근거를 제공한다. 부산에서는 해안과 산지가 인접하고, 도시 내부에서도 해안까지의 거리, 고도, 토지피복, 식생 상태가 지역마다 다르다. 따라서 밝은 격자와 어두운 격자 사이의 온도 차이에는 조명 강도와 함께 이러한 환경조건의 차이가 반영될 수 있다. 두 변수의 분포만 비교하면 환경조건을 고려한 뒤에도 밝기 차이가 야간 지표면온도 차이와 관련되는지 판단하기 어렵다. 또한 지표의 가열과 냉각 조건이 계절에 따라 달라지므로, 연중 자료를 하나로 요약하면 두 변수의 관계가 계절마다 어떻게 다른지 파악하기 어렵다. 
+[부산광역시 지리 개관](https://encykorea.aks.ac.kr/Article/E0024209).
+[미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
+ 
+ 위성 관측의 가용성도 계절별 결과를 해석하는 데 중요하다. 구름의 영향으로 MODIS 야간 지표면온도가 산출되지 않는 날이 있어, 월평균을 계산할 때 사용할 수 있는 관측 일수가 격자와 연월마다 달라질 수 있다. 최소 유효 관측 일수 기준을 바꾸면 포함되는 격자와 연월도 달라질 수 있으므로, 계절별 추정 결과가 이 기준에 얼마나 민감한지 확인할 필요가 있다.
+[Aqua MODIS 야간 지표면온도 자료](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1).
 
- 이에 본 연구는 부산광역시 육지 지역을 대상으로 VIIRS 야간조명 강도와 MODIS 야간 지표면온도의 공간적 연관성을 분석한다. 시기에 따른 온도 차이가 공간 비교에 섞이는 것을 줄이기 위해 같은 연월의 자료를 짝짓고, 공간 해상도가 다른 두 자료를 비교할 수 있도록 MODIS의 약 1 km 격자를 공통 분석 단위로 사용한다. 이를 바탕으로 해안 거리, 고도, 식생지수(NDVI)를 고려하기 전후의 연관성을 비교하고, 야간조명 강도가 지표면온도의 공간적 차이에 대해 추가 설명력을 갖는지 평가한다. 아울러 두 변수의 관계가 계절별로 어떻게 달라지며, 유효 관측 수 기준을 바꾸어도 그 관계가 유지되는지 검토한다.
+ 이에 본 연구는 2022–2025년 부산광역시 육지 지역을 대상으로 VIIRS 야간조명 강도와 MODIS 야간 지표면온도의 관계를 살펴본다. 여러 해에 걸쳐 반복되는 사계절 관측을 활용하되, 서로 다른 시기의 온도 차이가 공간 비교에 섞이는 것을 줄이기 위해 같은 연월 안에서 격자 간 차이를 비교한다. 두 위성자료는 MODIS 야간 지표면온도의 약 1 km 격자에 맞추어 동일한 공간 단위에서 비교한다. 이 범위에서 환경조건을 고려한 두 변수의 관계, 계절별 차이, 유효 관측 일수 기준에 대한 계절별 결과의 민감도를 차례로 검토한다.
 
 ## 2. 연구 질문 {#question}
 
