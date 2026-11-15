@@ -23,11 +23,18 @@ badge: "측량학 2조 프로젝트"
 [부산광역시 폭염 종합대책](https://museum.busan.go.kr/busan/news/1731817).
 [미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
 [Peng et al. (2012) 논문 PDF](https://sites.bu.edu/cliveg/files/2013/11/peng-uhi-est-2012.pdf).
-<div align="center">
-  <img src="figures/측량 연구 배경 이미지 1.JPG" alt="미국 EPA 도시 열섬 개요" style="width: 300px; height: auto;">
-  <img src="figures/연구주제 그림2.PNG" alt="Peng et al. (2012) 연구결과" style="width: 300px; height: auto;">
-</div>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/측량 연구 배경 이미지 1.JPG" alt="미국 EPA 도시 열섬 개요" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"> 미국 EPA 도시 열섬 개요- 열섬 효과 다이어그램</figcaption>
+  </figure>
 
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/연구주제 그림2.PNG" alt="Peng et al. (2012) 연구결과" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">419개 도시의 주간 도시열섬강도(SUHII)와 야간 도시열섬강도(SUHII)의 관계</figcaption>
+  </figure>
+</div>
+ 
  VIIRS 야간조명 자료는 위성이 관측한 야간 복사휘도를 바탕으로 조명의 공간 분포를 보여준다. 조명이 밝게 관측되는 곳은 건물과 도로가 밀집하거나 야간 활동이 집중되는 곳과 겹칠 수 있다. 건물과 포장면의 열 저장과 방출, 냉방이나 교통 등에서 발생하는 인공열은 도시의 야간 열환경과도 관련된다. 따라서 야간조명과 야간 지표면온도를 함께 비교하면, 조명이 집중된 지역과 야간에 높은 지표면온도를 보이는 지역이 어느 정도 일치하는지 살펴볼 수 있다. Song et al. (2021)은 베이징과 평양에서 VIIRS 야간조명과 MODIS 지표면온도 자료를 활용해 도시 열섬의 공간적 특성을 비교하였다. Nganyiyimana et al. (2023)은 서울에서 야간조명 강도와 야간 지표면 열섬 강도 사이에 양의 상관관계를 보고하였다.
 [VIIRS 월별 야간조명 자료](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMSLCFG).
 [미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
