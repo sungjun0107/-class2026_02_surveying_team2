@@ -40,10 +40,23 @@ badge: "측량학 2조 프로젝트"
 [미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
 [Song et al. (2021) 논문 원문](https://www.mdpi.com/2072-4292/13/16/3180).
 [Nganyiyimana et al. (2023) 논문 초록](https://khu.elsevierpure.com/en/publications/nighttime-light-a-potential-proxy-for-local-nocturnal-urban-heat-/).
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/연구배경 그림3.png" alt="그림 3 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">VIIRS 야간조명 자료 (2026-09-01 ~ 2026-09-30)</figcaption>
+  </figure>
+</div>
 
  이러한 선행연구는 야간조명 자료를 도시 열환경 연구에 활용할 근거를 제공한다. 부산에서는 해안과 산지가 인접하고, 도시 내부에서도 해안까지의 거리, 고도, 토지피복, 식생 상태가 지역마다 다르다. 따라서 밝은 격자와 어두운 격자 사이의 온도 차이에는 조명 강도와 함께 이러한 환경조건의 차이가 반영될 수 있다. 두 변수의 분포만 비교하면 환경조건을 고려한 뒤에도 밝기 차이가 야간 지표면온도 차이와 관련되는지 판단하기 어렵다. 또한 지표의 가열과 냉각 조건이 계절에 따라 달라지므로, 연중 자료를 하나로 요약하면 두 변수의 관계가 계절마다 어떻게 다른지 파악하기 어렵다. 
 [부산광역시 지리 개관](https://encykorea.aks.ac.kr/Article/E0024209).
 [미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/연구배경 그림4.png" alt="그림 4 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">부산광역시 지리개관</figcaption>
+  </figure>
+</div>
+
  
  위성 관측의 가용성도 계절별 결과를 해석하는 데 중요하다. 구름의 영향으로 MODIS 야간 지표면온도가 산출되지 않는 날이 있어, 월평균을 계산할 때 사용할 수 있는 관측 일수가 격자와 연월마다 달라질 수 있다. 최소 유효 관측 일수 기준을 바꾸면 포함되는 격자와 연월도 달라질 수 있으므로, 계절별 추정 결과가 이 기준에 얼마나 민감한지 확인할 필요가 있다.
 [Aqua MODIS 야간 지표면온도 자료](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1).
