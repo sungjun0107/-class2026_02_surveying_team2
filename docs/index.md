@@ -30,7 +30,7 @@ badge: "측량학 2조 프로젝트"
   </figure>
 
   <figure style="margin: 0; text-align: center; width: 48%;">
-    <img src="figures/연구주제 그림2.PNG" alt="Peng et al. (2012) 연구결과" style="width: 100%; height: auto;">
+    <img src="figures/연구배경 그림2.PNG" alt="Peng et al. (2012) 연구결과" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">419개 도시의 주간 도시열섬강도(SUHII)와 야간 도시열섬강도(SUHII)의 관계</figcaption>
   </figure>
 </div>
