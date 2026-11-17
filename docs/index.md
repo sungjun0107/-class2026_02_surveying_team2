@@ -45,14 +45,16 @@ badge: "측량학 2조 프로젝트"
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 48%;">
     <img src="figures/지표면 온도 분포.png" alt="지표면 온도 분포" style="width: 100%; height: auto;">
-    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">첫 번째 그림 캡션</figcaption>
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">지표면 온도 분포</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center; width: 48%;">
     <img src="figures/야간 조명 강도.png" alt="야간 조명 강도" style="width: 100%; height: auto;">
-    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">두 번째 그림 캡션</figcaption>
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">야간 조명 강도</figcaption>
   </figure>
 </div>
+
  야간조명을 도시 열환경 연구에 활용할 가능성은 선행연구에서도 제시되었다. Song et al.(2021)은 베이징과 평양에서 야간조명이 인구밀도보다 야간 지표면온도와 상대적으로 높은 상관관계를 보였다고 보고하였다. Mpakairi and Muvengwi(2019)는 짐바브웨 두 도시의 여름철 야간 열환경을 설명하는 모형에서 야간조명이 중요한 변수 중 하나라고 보고하였다. 국내에서는 Nganyiyimana et al.(2023)이 서울의 야간조명과 야간 지표면 열섬강도 사이에 강한 상관관계(R>0.86)을 확인하였다.
+
 [Song et al.(2021)](https://www.mdpi.com/2072-4292/13/16/3180?utm_source=chatgpt.com).
 [Mpakairi and Muvengwi(2019)](https://www.sciencedirect.com/science/article/abs/pii/S2212095518303419?utm_source=chatgpt.com).
 [Nganyiyimana et al.(2023)](https://khu.elsevierpure.com/en/publications/nighttime-light-a-potential-proxy-for-local-nocturnal-urban-heat-/?utm_source=chatgpt.com).
