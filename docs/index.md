@@ -72,6 +72,16 @@ badge: "측량학 2조 프로젝트"
 
 ## 2. 연구 질문 {#question}
 본 연구는 2022–2025년 부산광역시 육지 지역의 약 1 km 격자를 대상으로, 전체 격자 면적 중 육지가 차지하는 비율이 0.8 이상인 격자만 선정하여 같은 연월의 야간조명 강도와 야간 지표면온도를 비교한다. 연구 질문 1–3은 다음 절의 세부목적 1–3에 각각 대응한다.
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/연구질문 그림1.png" alt="첫 번째 그림 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">부산광역시 연구 대상지</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/연구질문 그림2.png" alt="두 번째 그림 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">부산광역시 MODIS 약 1km 분석 격자</figcaption>
+  </figure>
+</div>
 
 ### 2.1 연구 질문1
 > **일상적 질문:** “부산에서 주변 환경이 비슷한 곳끼리 비교해도, 밤에 더 밝은 곳의 지표면이 더 따뜻할까?”
