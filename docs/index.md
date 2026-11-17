@@ -129,7 +129,12 @@ badge: "측량학 2조 프로젝트"
 **연구 질문 3의 목적화.** 격자별 월자료를 포함하기 위한 최소 유효 관측 일수 기준을 바꾸어, 야간조명 강도와 야간 지표면온도 간 관계의 계절별 추정 결과가 보이는 민감도를 평가한다.
 
 **필요성 및 평가 지표.** 구름 등의 영향으로 품질 기준을 충족하는 야간 지표면온도 관측 일수는 격자와 연월에 따라 다를 수 있다. 따라서 최소 유효 관측 일수 기준을 바꾸면 비교에 포함되는 격자·연월 표본도 달라질 수 있다. 관측 일수 기준별로 세부목적 2와 동일한 모형과 야간조명 척도를 적용하여 계절별 회귀계수를 다시 추정한다. 각 기준의 격자·연월 표본 수, 회귀계수 및 추정 구간을 제시하고, 같은 계절에서 기준을 바꾸었을 때 회귀계수의 부호와 크기가 얼마나 달라지는지 비교하여 민감도를 평가한다.
-
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/연구목적 그림1.png" alt="그림 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">연구 흐름</figcaption>
+  </figure>
+</div>
 ## 4. 재료 {#materials}
 
 ### 4.1 자료 구성 및 생성 조건 {#advanced-data}
