@@ -19,27 +19,19 @@ badge: "측량학 2조 프로젝트"
 
 ## 1. 연구 배경 {#background}
 
- 폭염에 대응하려면 도시 내부에서 열이 집중되는 지역을 파악할 필요가 있다. 부산광역시는 폭염 종합대책을 통해 취약계층 보호와 폭염 대피공간 확충을 추진하고 있으며, 야간 지표면온도의 공간 분포는 도시 열환경을 진단하는 데 참고할 수 있는 자료다. 지표면온도(Land Surface Temperature, LST)는 도로, 건물 지붕, 토양, 식생 등 지표의 표면 온도를 뜻한다. 도시의 건물과 포장면에 낮 동안 저장된 열은 해가 진 뒤에도 방출되며, 지표의 재질과 피복에 따라 열을 저장하고 방출하는 특성이 달라 같은 도시 안에서도 야간 지표면온도에 차이가 생길 수 있다. Peng et al. (2012)은 전 세계 419개 대도시에서 도시와 교외의 지표면온도 차이를 비교해, 지표면 열섬 강도와 관련된 요인이 주간과 야간에 다르다고 보고하였다. 이러한 차이는 야간의 열환경을 별도로 살펴볼 필요성을 뒷받침한다.  
-[부산광역시 폭염 종합대책](https://museum.busan.go.kr/busan/news/1731817).
-[미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
-[Peng et al. (2012) 논문 PDF](https://sites.bu.edu/cliveg/files/2013/11/peng-uhi-est-2012.pdf).
-<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+ 도시의 열환경은 시민의 생활환경과 건강에 영향을 미치며, 같은 도시 안에서도 지형과 토지피복, 건축물의 분포에 따라 다르게 나타난다. 부산의 폭염 취약성을 평가한 Kim et al.(2020)은 취약성이 지역에 따라 큰 차이를 보인다고 보고하였다. 부산광역시도 폭염저감시설 확충과 무더위쉼터 운영 등 지역 단위의 폭염 대응을 추진하고 있다. 이러한 대응을 검토하려면 도시 전체의 평균뿐 아니라 지역별 열환경의 차이를 파악할 필요가 있다. 다만 폭염 취약성에는 열 노출 외에 사회적 요인도 포함되므로, 본 연구는 그중 야간 지표면의 열 상태가 공간적으로 어떻게 다른지에 초점을 맞춘다.
+[Kim et al.(2020)](https://journal.kci.go.kr/krihs/archive/articleView?artiId=ART002572895&utm_source=chatgpt.com).
+[부산시의 폭염저감시설·쉼터 운영](https://www.busan.go.kr/nbtnewsBU/1688776).
+<div style="display: flex; justify-content: center; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 48%;">
     <img src="figures/측량 연구 배경 이미지 1.JPG" alt="미국 EPA 도시 열섬 개요" style="width: 100%; height: auto;">
-    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"> 미국 EPA 도시 열섬 개요- 열섬 효과 다이어그램</figcaption>
-  </figure>
-
-  <figure style="margin: 0; text-align: center; width: 48%;">
-    <img src="figures/연구배경 그림2.PNG" alt="Peng et al. (2012) 연구결과" style="width: 100%; height: auto;">
-    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">419개 도시의 주간 도시열섬강도(SUHII)와 야간 도시열섬강도(SUHII)의 관계</figcaption>
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">미국 EPA 도시 열섬 개요- 열섬 효과 다이어그램</figcaption>
   </figure>
 </div>
  
- VIIRS 야간조명 자료는 위성이 관측한 야간 복사휘도를 바탕으로 조명의 공간 분포를 보여준다. 조명이 밝게 관측되는 곳은 건물과 도로가 밀집하거나 야간 활동이 집중되는 곳과 겹칠 수 있다. 건물과 포장면의 열 저장과 방출, 냉방이나 교통 등에서 발생하는 인공열은 도시의 야간 열환경과도 관련된다. 따라서 야간조명과 야간 지표면온도를 함께 비교하면, 조명이 집중된 지역과 야간에 높은 지표면온도를 보이는 지역이 어느 정도 일치하는지 살펴볼 수 있다. Song et al. (2021)은 베이징과 평양에서 VIIRS 야간조명과 MODIS 지표면온도 자료를 활용해 도시 열섬의 공간적 특성을 비교하였다. Nganyiyimana et al. (2023)은 서울에서 야간조명 강도와 야간 지표면 열섬 강도 사이에 양의 상관관계를 보고하였다.
-[VIIRS 월별 야간조명 자료](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMSLCFG).
-[미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
-[Song et al. (2021) 논문 원문](https://www.mdpi.com/2072-4292/13/16/3180).
-[Nganyiyimana et al. (2023) 논문 초록](https://khu.elsevierpure.com/en/publications/nighttime-light-a-potential-proxy-for-local-nocturnal-urban-heat-/).
+지표면온도(Land Surface Temperature, LST)는 도로, 건물 지붕, 토양, 식생 등 지표의 온도를 위성으로 관측한 자료로, 도시 열환경의 공간적 차이를 살펴보는 데 활용된다. 야간에는 낮 동안 지표에 저장된 열이 방출되며, 그 양상은 지표의 재질과 피복에 따라 다를 수 있다. Peng et al.(2012)은 전 세계 419개 대도시에서 도시와 교외의 지표면온도 차이로 정의한 지표면 열섬강도를 비교하여, 도시들 사이에서 주간과 야간의 열섬강도에 유의한 상관관계가 나타나지 않았다고 보고하였다. 이는 야간의 지표 열환경을 주간과 구분해 살펴볼 필요성을 뒷받침한다. 그러나 야간 LST의 분포만으로는 지역별 차이가 어떤 조건과 관련되는지 알기 어려우므로, 지형·식생·토지피복 등의 자료를 함께 고려해야 한다.
+[Peng et al.(2012)](https://sites.bu.edu/cliveg/files/2013/11/peng-uhi-est-2012.pdf?utm_source=chatgpt.com).
+[미국 EPA 설명](https://www.epa.gov/heatislands/measuring-heat-islands?utm_source=chatgpt.com).
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 48%;">
     <img src="figures/연구배경 그림3.png" alt="그림 3 설명" style="width: 100%; height: auto;">
@@ -47,21 +39,34 @@ badge: "측량학 2조 프로젝트"
   </figure>
 </div>
 
- 이러한 선행연구는 야간조명 자료를 도시 열환경 연구에 활용할 근거를 제공한다. 부산에서는 해안과 산지가 인접하고, 도시 내부에서도 해안까지의 거리, 고도, 토지피복, 식생 상태가 지역마다 다르다. 따라서 밝은 격자와 어두운 격자 사이의 온도 차이에는 조명 강도와 함께 이러한 환경조건의 차이가 반영될 수 있다. 두 변수의 분포만 비교하면 환경조건을 고려한 뒤에도 밝기 차이가 야간 지표면온도 차이와 관련되는지 판단하기 어렵다. 또한 지표의 가열과 냉각 조건이 계절에 따라 달라지므로, 연중 자료를 하나로 요약하면 두 변수의 관계가 계절마다 어떻게 다른지 파악하기 어렵다. 
-[부산광역시 지리 개관](https://encykorea.aks.ac.kr/Article/E0024209).
-[미국 EPA 도시 열섬 개요](https://www.epa.gov/heatislands/what-are-heat-islands).
-<div style="display: flex; justify-content: center; margin: 20px 0;">
+야간조명은 위성이 관측한 인공조명의 강도와 분포를 보여주는 자료다. 조명이 밝은 지역은 건물·도로 등의 시설과 야간 활동이 집중된 지역과 겹칠 수 있어, 야간조명은 도시 공간의 특성을 간접적으로 살펴보는 지표로 활용되어 왔다(Zheng et al., 2023). NDVI가 식생 상태를, 토지피복이 시가화지역을 포함한 지표 유형을 보여준다면, 야간조명은 이 자료들이 직접 나타내지 않는 조명의 공간적 집중 양상을 보여준다. 또한 인구 격자 자료는 자료에 따라 조사·갱신 주기가 길지만, VIIRS 야간조명은 반복 관측을 바탕으로 월별 자료를 사용할 수 있다. 따라서 본 연구는 야간조명이 기존 환경자료와 함께 야간 LST의 지역별 차이를 살펴보는 데 도움이 되는지 확인하고자 한다. 이것이 본 연구에서 야간조명을 사용하는 이유다.
+[Zheng et al.(2023)](https://research.cuhk.edu.hk/en/publications/nighttime-light-remote-sensing-for-urban-applications-progress-ch/?utm_source=chatgpt.com).
+[VIIRS가 월별 야간조명 자료를 제공한다는 근거](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMSLCFG?utm_source=chatgpt.com&hl=ko).
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 48%;">
-    <img src="figures/연구배경 그림4.png" alt="그림 4 설명" style="width: 100%; height: auto;">
-    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">부산광역시 지리개관</figcaption>
+    <img src="figures/지표면 온도 분포.png" alt="지표면 온도 분포" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">첫 번째 그림 캡션</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/야간 조명 강도.png" alt="야간 조명 강도" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">두 번째 그림 캡션</figcaption>
   </figure>
 </div>
+ 야간조명을 도시 열환경 연구에 활용할 가능성은 선행연구에서도 제시되었다. Song et al.(2021)은 베이징과 평양에서 야간조명이 인구밀도보다 야간 지표면온도와 상대적으로 높은 상관관계를 보였다고 보고하였다. Mpakairi and Muvengwi(2019)는 짐바브웨 두 도시의 여름철 야간 열환경을 설명하는 모형에서 야간조명이 중요한 변수 중 하나라고 보고하였다. 국내에서는 Nganyiyimana et al.(2023)이 서울의 야간조명과 야간 지표면 열섬강도 사이에 강한 상관관계(R>0.86)을 확인하였다.
+[Song et al.(2021)](https://www.mdpi.com/2072-4292/13/16/3180?utm_source=chatgpt.com).
+[Mpakairi and Muvengwi(2019)](https://www.sciencedirect.com/science/article/abs/pii/S2212095518303419?utm_source=chatgpt.com).
+[Nganyiyimana et al.(2023)](https://khu.elsevierpure.com/en/publications/nighttime-light-a-potential-proxy-for-local-nocturnal-urban-heat-/?utm_source=chatgpt.com).
 
- 
- 위성 관측의 가용성도 계절별 결과를 해석하는 데 중요하다. 구름의 영향으로 MODIS 야간 지표면온도가 산출되지 않는 날이 있어, 월평균을 계산할 때 사용할 수 있는 관측 일수가 격자와 연월마다 달라질 수 있다. 최소 유효 관측 일수 기준을 바꾸면 포함되는 격자와 연월도 달라질 수 있으므로, 계절별 추정 결과가 이 기준에 얼마나 민감한지 확인할 필요가 있다.
-[Aqua MODIS 야간 지표면온도 자료](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1).
+ 이러한 선행연구의 결과가 부산에서도 나타나는지는 별도로 확인할 필요가 있다. 야간조명은 인공열 발생량이나 인간 활동량을 직접 측정하지 않으며, 밝은 지역과 어두운 지역은 고도, 토지피복, 식생 상태에서도 차이를 보일 수 있다. 특히 부산은 해안과 산지가 공존하므로 주변 환경을 고려하지 않은 관계만으로 야간조명의 유용성을 판단하기 어렵다. 따라서 해안까지의 거리, 고도, 토지피복, 식생지수(NDVI)를 고려한 상태에서도 야간조명 강도와 야간 LST 사이에 관계가 나타나는지 살펴볼 필요가 있다. 이를 통해 야간조명이 기존 환경자료에 더해 제공하는 정보가 있는지, 부산에서도 활용할 근거가 있는지를 평가할 수 있다.
+[부산광역시 기본현황](https://www.busan.go.kr/bhbasisinfo/?utm_source=chatgpt.com).
+[Zheng et al.(2023)](https://research.cuhk.edu.hk/en/publications/nighttime-light-remote-sensing-for-urban-applications-progress-ch/?utm_source=chatgpt.com).
 
- 이에 본 연구는 2022–2025년 부산광역시 육지 지역을 대상으로 VIIRS 야간조명 강도와 MODIS 야간 지표면온도의 관계를 살펴본다. 여러 해에 걸쳐 반복되는 사계절 관측을 활용하되, 서로 다른 시기의 온도 차이가 공간 비교에 섞이는 것을 줄이기 위해 같은 연월 안에서 격자 간 차이를 비교한다. 두 위성자료는 MODIS 야간 지표면온도의 약 1 km 격자에 맞추어 동일한 공간 단위에서 비교한다. 이 범위에서 환경조건을 고려한 두 변수의 관계, 계절별 차이, 유효 관측 일수 기준에 대한 계절별 결과의 민감도를 차례로 검토한다.
+ 두 변수의 관계를 살펴볼 때는 계절과 위성 관측의 가용성도 고려해야 한다. 지표의 가열과 냉각 조건은 계절에 따라 달라지므로, 전체 기간의 관계만으로는 계절별 차이를 파악하기 어려울 수 있다. 또한 MODIS 야간 LST는 구름 등의 영향으로 관측값이 없는 날이 발생하며, 월평균에 사용되는 유효 관측 일수도 격자와 연월마다 다를 수 있다. 최소 유효 관측 일수 기준에 따라 분석에 포함되는 자료가 달라지므로, 계절별 관계가 이 기준의 변경에 얼마나 민감한지도 확인할 필요가 있다.
+[MYD11A1 공식 자료 설명](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1?utm_source=chatgpt.com&hl=ko).
+
+ 이에 본 연구는 2022~2025년 부산광역시 육지 지역을 대상으로, 같은 연월의 VIIRS 야간조명 강도와 MODIS 야간 LST를 약 1 km 격자 단위에서 비교한다. 먼저 해안까지의 거리, 고도, 토지피복, NDVI를 고려하여 두 변수의 관계를 파악한다. 이어서 동일한 환경변수를 고려한 관계가 계절별로 어떻게 다른지 비교하고, 최소 유효 관측 일수 기준을 바꾸었을 때 계절별 결과의 민감도를 평가한다. 이 결과는 야간조명을 부산의 야간 지표 열환경을 살펴보는 보조 자료로 활용할 수 있는지 판단하는 근거가 된다. 나아가 지역별 열환경을 더 자세히 조사할 필요가 있는 곳을 검토하는 기초자료로 활용할 수 있다.
+[VIIRS가 월별 야간조명 자료를 제공한다는 근거](https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMSLCFG?utm_source=chatgpt.com&hl=ko).
+[MYD11A1 공식 자료 설명](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1?utm_source=chatgpt.com&hl=ko).
 
 ## 2. 연구 질문 {#question}
 본 연구는 2022–2025년 부산광역시 육지 지역의 약 1 km 격자를 대상으로, 전체 격자 면적 중 육지가 차지하는 비율이 0.8 이상인 격자만 선정하여 같은 연월의 야간조명 강도와 야간 지표면온도를 비교한다. 연구 질문 1–3은 다음 절의 세부목적 1–3에 각각 대응한다.
