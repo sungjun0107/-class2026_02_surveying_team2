@@ -144,30 +144,22 @@ badge: "측량학 2조 프로젝트"
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">연구 흐름</figcaption>
   </figure>
 </div>
+
 ## 4. 재료 {#materials}
 
-### 4.1 자료 구성 및 생성 조건 {#advanced-data}
+### 4.1 연구 범위와 분석 단위
+ㆍ공간 범위: 부산광역시 16개 구·군의 육지 지역 (geoBoundaries ADM2). 해안과 내륙, 저지대와 산지가 함께 있어 해안 거리, 고도, 식생의 영향을 비교하기에 적합하다.
+ㆍ관측 시기: 2022년 1월~2025년 12월 (48개 연월). 최근 4개 연도이며 각 계절이 12개 연월을 확보한다.
+ㆍ분석 단위: MODIS Aqua 야간 LST의 약 1 km 격자 × 연월. 해상도가 가장 거친 LST 격자를 공통 단위로 삼아 다른 자료를 이 격자에 맞췄다.
+ㆍ추출 원자료는 768격자 × 48연월 = 36,864행이다. 같은 격자가 여러 연월에 반복 관측되므로 행(격자·연월)과 고유 격자를 구분한다.
 
-기본 탐색 자료는 seed `2026`으로 생성한 36개 가상 표본이다. NDVI 범위는 0.12–0.82이며, `LST = 37 − 11×NDVI + 무작위 오차`의 생성식을 적용하였다.
-
-세부목적 1–3에는 seed `20261026`으로 생성한 **별도의 384행 합성자료**를 공통으로 사용하였다. 자료는 24개 가상 블록, 블록당 8지점, 지점당 봄·여름 두 관측으로 구성된다. 따라서 고유 지점 수는 192개이며, 384행을 독립적인 384지점으로 해석하지 않는다. 기본 탐색 자료와 세부목적 분석 자료는 생성 과정이 다르므로 두 자료에서 얻은 계수를 직접 비교하지 않는다.
-
-입력 변수는 `block`(공간 집단 번호), `site`(지점 번호), `summer`(봄=0, 여름=1), `ndvi`, `elevation_m`(고도, m), `impervious`(불투수면 비율, 0–1), `coast_km`(해안 거리, km), `valid_fraction`(가상 유효 관측 비율, 0–1), `lst_c`(LST, °C)이다. 실제 좌표나 관측 날짜는 없다.
-| 항목 | 내용 | 비고 |
-|---|---|---|
-| 자료 기간 | 2022~2025년 | 4개년 |
-| 공간 단위 | 1 km 격자 | 부산광역시 |
-| 분석 자료 | 야간조명, 지표면온도 | 위성자료 |
-
-```text
-LST = 28 + 7×summer − (4+5×summer)×NDVI
-      − 0.006×고도 + 3×불투수면비율 − 0.12×해안거리
-      + 블록오차 + 관측오차
-```
-
-NDVI가 높을수록 고도가 높고 불투수면 비율이 낮아지는 경향을 생성 과정에 포함하였다. 같은 블록의 관측에는 공통 오차를 부여하고, 유효 관측 비율이 낮을수록 관측 오차가 커지도록 설정하였다. 생성식의 모든 계수는 교육 목적의 가정이며 외부 문헌에서 추정한 값이 아니다. 따라서 관계의 방향과 계절 차이는 분석 이전에 자료 생성 구조에 포함되어 있다.
-
-[기본 자료 CSV]({{ site.github.repository_url }}/blob/main/03_분석결과/synthetic_samples.csv) · [세부목적 분석 CSV]({{ site.github.repository_url }}/blob/main/03_분석결과/advanced_synthetic_samples.csv) · [공통 분석 코드]({{ site.github.repository_url }}/blob/main/01_공통코드/advanced_analysis.py)
+### 4.2 사용 자료
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 48%;">
+    <img src="figures/0746FB88-E9A1-44D3-B4D7-A45102D7D51E.jpeg" alt="그림 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">사용 자료</figcaption>
+  </figure>
+</div>
 
 ## 5. 방법 {#method}
 
