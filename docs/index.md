@@ -155,7 +155,7 @@ badge: "측량학 2조 프로젝트"
 
 ### 4.2 사용 자료
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 48%;">
+  <figure style="margin: 0; text-align: center; width: 60%;">
     <img src="figures/0746FB88-E9A1-44D3-B4D7-A45102D7D51E.jpeg" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">사용 자료</figcaption>
   </figure>
