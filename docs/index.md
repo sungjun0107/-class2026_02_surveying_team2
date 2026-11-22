@@ -231,10 +231,9 @@ $$
 \begin{aligned}
 \text{LST} &\sim \sum_{s} \text{계절}_{s} \times \left( \beta_{s} \cdot \text{NTL} + \boldsymbol{\gamma}_{s}' \cdot \text{환경변수} \right) \\[12pt]
 \Delta_{s,s'} &= \beta_{s} - \beta_{s'} \\[12pt]
-H_{0} &: \beta_{\text{봄}} = \beta_{\text{여름}} = \beta_{\text{가을}} = \beta_{\text{겨울}}
+H_{0}: &\ \beta_{\text{봄}} = \beta_{\text{여름}} = \beta_{\text{가을}} = \beta_{\text{겨울}}
 \end{aligned}
 $$
-
 
 ### 5.4 세부목적 3의 분석: 최소 유효 관측 일수 민감도
 
