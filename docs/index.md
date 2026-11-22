@@ -229,8 +229,8 @@ NTL은 오른쪽으로 치우쳐 있어 ln(1+NTL)로 변환했다. 시기에 따
 
 $$
 \begin{aligned}
-\text{LST} &\sim \sum_{s} \text{계절}_{s} \times \left( \beta_{s} \cdot \text{NTL} + \boldsymbol{\gamma}_{s}' \cdot \text{환경변수} \right) \\
-\Delta_{s,s'} &= \beta_{s} - \beta_{s'} \\
+\text{LST} &\sim \sum_{s} \text{계절}_{s} \times \left( \beta_{s} \cdot \text{NTL} + \boldsymbol{\gamma}_{s}' \cdot \text{환경변수} \right) \\[12pt]
+\Delta_{s,s'} &= \beta_{s} - \beta_{s'} \\[12pt]
 H_{0} &: \beta_{\text{봄}} = \beta_{\text{여름}} = \beta_{\text{가을}} = \beta_{\text{겨울}}
 \end{aligned}
 $$
