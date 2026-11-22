@@ -201,7 +201,7 @@ badge: "측량학 2조 프로젝트"
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 48%;">
-    <img src="../figures/연구방법 그림1.png" alt="그림 설명" style="width: 100%; height: auto;">
+    <img src="../figures/research_method_fig1.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">전처리 흐름</figcaption>
   </figure>
 </div>
