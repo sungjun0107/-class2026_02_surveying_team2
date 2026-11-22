@@ -167,6 +167,7 @@ badge: "측량학 2조 프로젝트"
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;">토지피복 3유형 재분류 지도</figcaption>
   </figure>
 </div>
+
 ### 4.3 자료의 품질 기준
 ㆍLST: 품질 비트가 "양호" 또는 "보통"인 관측만 사용하고 구름 등으로 값이 생성되지 않은 관측은 제외했다. 값은 켈빈에서 섭씨로 변환하고, 월 유효 관측일 수(n_valid)를 함께 저장했다.  
 ㆍNDVI: 품질 지표(SummaryQA)가 0~1인 영상만 사용하고 ×0.0001로 척도를 변환했다.  
