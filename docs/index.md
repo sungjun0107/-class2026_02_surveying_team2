@@ -259,11 +259,23 @@ $$
 ### 6.1 기초 탐색: 야간조명과 야간 LST의 월별 상관
 **대응 연구 질문:** 환경조건을 고려하기 전, 같은 연월 안에서 야간조명과 야간 LST는 어떤 방향의 관계를 보이는가? (기술 목적이며 연구 질문 1~3에 직접 답하는 결과는 아니다.)
  최소 유효 관측 일수 3일 이상 기준을 적용한 분석 표본은 31,222행(709격자, 48연월)이다. 연월 평균을 제거한 ln(NTL+1)과 야간 LST를 비교하면, 야간조명 강도가 높은 관측값일수록 야간 LST 편차도 높은 경향이 나타났다.
-[그림1 삽입]
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 60%;">
+    <img src="연구결과그림1.png" alt="그림 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
+  </figure>
+</div>
 
+**그림 1.** 연월 평균을 제거한 ln(NTL+1)(표준화)과 야간 LST 편차(°C)의 육각 빈도 산점도. 색은 격자·연월 수(로그 척도)이며 표본은 31,222행이다. 환경조건을 고려하지 않은 기술적 비교이다.
 연월별 상관계수는 48개 연월 모두 양(+)이었다. Pearson 상관계수는 평균 0.554(최소 0.144, 최대 0.846), Spearman 상관계수는 평균 0.565(최소 0.157, 최대 0.846)였다.
-(표 1. 연월별 상관계수 요약)
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <figure style="margin: 0; text-align: center; width: 60%;">
+    <img src="연구결과표1.png" alt="그림 설명" style="width: 100%; height: auto;">
+    <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
+  </figure>
+</div>
 
+**표 1.** ln(NTL+1)과 야간 LST의 같은 연월 내 상관계수를 연월별로 계산한 뒤 48개 값을 요약했다. 환경조건을 고려한 결과가 아니다.
 
 ### 6.2 세부목적 1 · 환경조건을 고려한 야간조명과 야간 LST의 관계
 **대응 연구 질문:** 해안까지의 거리, 고도, 토지피복, NDVI를 고려했을 때 야간조명 강도와 야간 LST는 어떤 방향과 크기의 관계를 보이는가? (연구 질문 1)
