@@ -281,7 +281,7 @@ $$
 **대응 연구 질문:** 해안까지의 거리, 고도, 토지피복, NDVI를 고려했을 때 야간조명 강도와 야간 LST는 어떤 방향과 크기의 관계를 보이는가? (연구 질문 1)
  같은 표본(31,222행, 709격자, 48연월)에서 야간조명 계수는 보정 전(모형 A) 0.764°C/SD(95% 구간 0.714~0.814), 보정 후(모형 C) 0.806°C/SD(0.729~0.884)였다. 두 계수 모두 양(+)이었고 구간이 0을 포함하지 않았다. 환경변수를 추가한 후 야간조명 계수는 0.042°C/SD 증가했으며, 보정 전 계수 대비 약 5.5% 높은 값으로 나타났다. 연월 평균을 제거한 야간 LST의 표준편차는 1.400°C이며, 보정 후 계수는 이 값의 약 0.58배이다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 80%;">
+  <figure style="margin: 0; text-align: center; width: 100%;">
     <img src="figures/연구결과_그림2.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
@@ -306,7 +306,7 @@ R²는 모형 A 0.297, 모형 B 0.238, 모형 C 0.357이었다. 환경변수만 
 
 계절별 표본은 봄 7,248행, 여름 7,568행, 가을 8,038행, 겨울 8,368행이며 모든 계절에서 709격자, 12연월이었다. 환경조건을 고려한 야간조명 계수는 네 계절 모두 양(+)이었고 구간이 0을 포함하지 않았다. 계수는 봄 1.034, 가을 0.833, 여름 0.801, 겨울 0.658°C/SD 순으로 컸다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 80%;">
+  <figure style="margin: 0; text-align: center; width: 100%;">
     <img src="figures/연구결과그림3.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
@@ -314,7 +314,7 @@ R²는 모형 A 0.297, 모형 B 0.238, 모형 C 0.357이었다. 환경변수만 
 
 **그림 3.** 왼쪽은 계절별 야간조명 계수(°C/SD)와 95% 군집 신뢰구간이며 회색선은 0이다. 오른쪽은 계절별 ΔR²(환경변수만 → 야간조명 추가)이다. 모든 계절에 세부목적 1의 모형 C와 전체 기간 기준 표준편차를 적용했다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 80%;">
+  <figure style="margin: 0; text-align: center; width: 100%;">
     <img src="figures/연구결과표3.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
@@ -339,7 +339,7 @@ R²는 모형 A 0.297, 모형 B 0.238, 모형 C 0.357이었다. 환경변수만 
 
 기준을 1, 3, 5, 7, 10일로 바꾸면 격자·연월 표본 수가 줄었다. 가장 느슨한 기준(1일)에서 가장 엄격한 기준(10일)으로 바뀔 때 표본 수는 봄 8,165→2,783행, 여름 7,959→1,902행, 가을 8,166→4,206행, 겨울 8,429→6,006행이었다. 10일 기준에서 남은 격자·연월은 봄 467격자·11연월, 여름 513격자·9연월, 가을 690격자·10연월, 겨울 689격자·12연월이었다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 80%;">
+  <figure style="margin: 0; text-align: center; width: 100%;">
     <img src="figures/연구결과그림4.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
