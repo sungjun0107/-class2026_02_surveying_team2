@@ -269,7 +269,7 @@ $$
 **그림 1.** 연월 평균을 제거한 ln(NTL+1)(표준화)과 야간 LST 편차(°C)의 육각 빈도 산점도. 색은 격자·연월 수(로그 척도)이며 표본은 31,222행이다. 환경조건을 고려하지 않은 기술적 비교이다.
 연월별 상관계수는 48개 연월 모두 양(+)이었다. Pearson 상관계수는 평균 0.554(최소 0.144, 최대 0.846), Spearman 상관계수는 평균 0.565(최소 0.157, 최대 0.846)였다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 60%;">
+  <figure style="margin: 0; text-align: center; width: 80%;">
     <img src="figures/연구결과표1.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
@@ -314,7 +314,7 @@ R²는 모형 A 0.297, 모형 B 0.238, 모형 C 0.357이었다. 환경변수만 
 
 **그림 3.** 왼쪽은 계절별 야간조명 계수(°C/SD)와 95% 군집 신뢰구간이며 회색선은 0이다. 오른쪽은 계절별 ΔR²(환경변수만 → 야간조명 추가)이다. 모든 계절에 세부목적 1의 모형 C와 전체 기간 기준 표준편차를 적용했다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-  <figure style="margin: 0; text-align: center; width: 100%;">
+  <figure style="margin: 0; text-align: center; width: 80%;">
     <img src="figures/연구결과표3.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
