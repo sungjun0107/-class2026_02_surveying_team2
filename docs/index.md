@@ -261,7 +261,7 @@ $$
  최소 유효 관측 일수 3일 이상 기준을 적용한 분석 표본은 31,222행(709격자, 48연월)이다. 연월 평균을 제거한 ln(NTL+1)과 야간 LST를 비교하면, 야간조명 강도가 높은 관측값일수록 야간 LST 편차도 높은 경향이 나타났다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 60%;">
-    <img src="연구결과그림1.png" alt="그림 설명" style="width: 100%; height: auto;">
+    <img src="figures/연구결과그림1.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
 </div>
@@ -270,7 +270,7 @@ $$
 연월별 상관계수는 48개 연월 모두 양(+)이었다. Pearson 상관계수는 평균 0.554(최소 0.144, 최대 0.846), Spearman 상관계수는 평균 0.565(최소 0.157, 최대 0.846)였다.
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <figure style="margin: 0; text-align: center; width: 60%;">
-    <img src="연구결과표1.png" alt="그림 설명" style="width: 100%; height: auto;">
+    <img src="figures/연구결과표1.png" alt="그림 설명" style="width: 100%; height: auto;">
     <figcaption style="font-size: 0.9em; color: #555; margin-top: 8px;"></figcaption>
   </figure>
 </div>
